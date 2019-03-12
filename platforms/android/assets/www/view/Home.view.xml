@@ -1,0 +1,38 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Mortgage-App.controller.Home">
+<App id="__app0" backgroundColor="white">
+    <pages>
+        <Page id="__page2" enableScrolling="false">
+            <customHeader>
+                <Bar id="__bar1">
+                    <contentLeft>
+                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://menu2" size="2em" id="__icon2" width="10%"/>
+                        <Button text="CẦM ĐỒ" width="45%" id="__button0"/>
+                        <Button text="THANH LÝ" width="45%" id="__button1"/>
+                    </contentLeft>
+                </Bar>
+            </customHeader>
+        <footer>
+            <Bar id="__bar2" design="Footer">
+                <contentLeft>
+                    <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://home" size="2em" id="__icon0" width="25%"/>
+                    <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://search" size="2em" id="__icon1" width="25%"/>
+                    <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://task" size="2em" id="__icon3" width="25%"/>
+                    <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://user-settings" size="2em" id="__icon4" width="25%"/>
+                </contentLeft>
+            </Bar>
+        </footer>
+        <content>
+            <IconTabBar id="__bar0" class="tabbedBar" headerMode="Inline" stretchContentHeight="true" busyIndicatorSize="Large">
+            <items>
+                <IconTabFilter text="Tìm kiếm" icon="sap-icon://history" iconColor="Neutral" id="__filter0">
+                    <content>
+                        <core:Fragment xmlns:core="sap.ui.core" fragmentName="Mortgage-App.view.SearchHistoryFragment" type="XML" id="__app1"/>
+                    </content>
+                </IconTabFilter>
+                <IconTabFilter text="Giao dịch" icon="sap-icon://customer-history" iconColor="Neutral" id="__filter1"/>
+            </items>
+            </IconTabBar>
+        </content>
+        </Page></pages>
+</App>
+</mvc:View>
